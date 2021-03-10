@@ -1,0 +1,201 @@
+@font-face {
+	font-family: "dosis-regular";
+	src: url(Assets/Font/Dosis-Regular.ttf);
+}
+
+@font-face {
+	font-family: "dosis-extraLight";
+	src: url(Assets/Font/Dosis-ExtraLight.ttf);
+}
+
+body {
+	zoom: reset;
+	background: no-repeat center fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	transition: background-image 2s;
+}
+
+
+#container {
+	display: relative;
+	font-family: dosis-regular;
+	text-align: center;
+	color: white;
+	width: 100%;
+	height: 1000px;
+	background-color: rgba(255,255,255, 0.1);
+	padding-top: 10%;
+}
+
+#weather-logo {
+	display: inline-block;
+	margin: auto;
+	width: 120px; 
+	height: 120px;
+	background-repeat: no-repeat;
+}
+
+#weather-detail {
+	display: inline-block;
+	position: relative;
+	top: -30px;
+	margin-left: -25px;
+}
+
+#weather-desc {
+	width: 200px;
+	font-size: 20px;
+}
+
+#weather-temp {
+	width: 100px;
+	font-size: 40px;
+	margin: auto;
+}
+
+#welcome-text {
+	margin-top: -25px;
+	font-size: 60px;
+	margin-bottom: 10px;
+}
+
+#date-text, #time-text, #search-text, #copyright {
+	font-family: dosis-extraLight;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+ #copyright {
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 42%;
+	
+ 	font-size: 20px;
+ }
+
+#search-txt, #search-txt:focus {
+	outline:0;
+	border: none;
+	background-color: transparent;
+	color: white;
+	width: 200px;
+	height: 30px;
+	font-family: dosis-extraLight;
+	font-size: 30px;
+	text-align: center;
+}
+
+#search-txt:focus {
+	border-bottom: 1px solid white;
+}
+
+#icon ul {
+	padding: 0;
+}
+
+#icon ul li{
+	display: inline-block;
+	list-style-type: none;
+	margin: 0 5px;
+	background: transparent;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	position: relative;
+	transition: background .2s;
+}
+
+a {
+	color: white;
+}
+
+#icon ul li:nth-child(1):hover{
+	background: #3b5998;
+}
+
+#icon ul li:nth-child(2):hover{
+	background: #cc181e;
+}
+
+#icon ul li:nth-child(3):hover{
+	background: #00aced;
+}
+
+#icon ul li:nth-child(4):hover{
+	background: linear-gradient(to bottom left, #8a3ab9, #cd486b, #fbad50, #fccc63); 
+}
+
+/* Gplus
+#icon ul li:nth-child(5):hover{
+	background: #d34836;
+}*/
+
+/* Quora
+#icon ul li:nth-child(6):hover{
+	background: #AA2200;
+}*/
+
+#icon ul li:hover {
+	cursor: pointer;
+}
+
+#icon-messier {
+	background-image: url(Assets/Images/Icons/messier.png);
+}
+
+#icon-messier:hover {
+	background-image: url(Assets/Images/Icons/messier-hover.png);
+}
+
+#icon-academic {
+	background-image: url(Assets/Images/Icons/academic.png);
+}
+
+#icon-academic:hover {
+	background-image: url(Assets/Images/Icons/academic-hover.png);
+}
+
+#icon-atlantis {
+	background-image: url(Assets/Images/Icons/atlantis.png);
+}
+
+#icon-atlantis:hover {
+	background-image: url(Assets/Images/Icons/atlantis-hover.png);
+}
+
+#icon-rcomp {
+	background-image: url(Assets/Images/Icons/rcomp.png);
+}
+
+#icon-rcomp:hover {
+	background-image: url(Assets/Images/Icons/rcomp-hover.png);
+}
+
+#icon-na {
+	background-image: url(Assets/Images/Icons/na.png);
+}
+
+#icon-na:hover {
+	background-image: url(Assets/Images/Icons/na-hover.png);
+}
+
+#icon-localweb div[id ^= "icon"]:hover {
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+#icon-localweb div {
+	display: inline-block;
+	background-size: 100%;
+	width: 22px;
+	height: 22px;
+	margin: 15px;
+	
+	transform: translateY(0%);
+	transition: transform 1s;
+}
